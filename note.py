@@ -1,23 +1,28 @@
-# 단축키.. "글자 글자." 적고 엔터 누르니까 이프문이 생겨버리네...... 옵션 고를 수 있네.. while 이런 것도.. 쓸모없나
-import sys
+a = [1,2,3,4,5,6,7,8,9]
+print(a)
 
+print(a[4])
 
-sys.stdin = open("input.txt", "r")
-
-T = int(input())
-
-def prc(row, col):
-    mini = 0
-    for i in range(M):
-        for j in range(M):
-            mini += arr[row+i][col+j]
-    return mini
-
-for tc in range(1, 1 + T):
-    N, M = map(int, input().split())
-    arr = [list(map(int, input().split())) for _ in range(N)]
-    ans = []
-    for r in range(N - M + 1):
-        for c in range(N - M + 1):
-            ans.append(prc(r, c))
-    print(max(ans))
+a = [] * 10     # '빈 리스트' 만들기
+print(a)
+a = [0] * 10    # '0따리' 리스트
+print(a)
+b = [1]
+print(a+b)
+##
+##
+##
+array = [i for i in range(20) if i % 2]
+print(array)
+array = []
+for i in range(20):
+    if i%2:
+        array.append(i)
+print(array)
+###
+###
+###
+n = 3
+m = 4
+array = [[0]*n for _ in range(m)]
+print(array)
