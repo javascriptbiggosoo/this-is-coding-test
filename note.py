@@ -26,3 +26,22 @@ n = 3
 m = 4
 array = [[0]*n for _ in range(m)]
 print(array)
+###
+###
+###
+a = [ 1,3,4]
+a.insert(3,5)
+print("인덱스 3에 5 추가: ", a)
+###
+data = {}
+data['사과'] = 'apple'
+data['바나나'] = 'banana'
+data['당근'] = 'carrot'
+key_list= data.keys()
+print(key_list)
+value_list = data.values()
+print(value_list)
+
+for key in key_list:
+    print(data[key])
+###
