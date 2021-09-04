@@ -1,5 +1,5 @@
+# 1트
 # 해설안본 상태로 맞춤, 쉬움, 코드 개선점 있음
-
 N, M, K = map(int, input().split())
 arr = list(map(int, input().split()))
 
@@ -23,6 +23,7 @@ for _ in range(M):
 
 print(ans)
 
+# 2트
 # sort()를 이용해서 간단하게 풀어봄
 # N, M, K = map(int, input().split())
 # arr = list(map(int, input().split()))
