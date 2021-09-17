@@ -37,6 +37,12 @@ print(value_list)
 for key in key_list:
     print(data[key])
 print("4########")
+print(1, end=" ")
+print(2, end=" ")
+print(3)
+
 print("5########")
+
+
 print("6########")
 print("7########")
