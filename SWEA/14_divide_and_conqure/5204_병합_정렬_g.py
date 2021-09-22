@@ -1,5 +1,8 @@
 import sys
-sys.stdin = open('5204.txt', 'r')
+
+sys.stdin = open("5204.txt", "r")
+
+
 def merge(l, r):
     global big_left
     result = []
@@ -21,7 +24,7 @@ def divide(not_sorted):
     if len(not_sorted) <= 1:
         return not_sorted
 
-    mid = len(not_sorted)//2
+    mid = len(not_sorted) // 2
     left = not_sorted[:mid]
     right = not_sorted[mid:]
     left = divide(left)
@@ -35,5 +38,5 @@ for tc in range(1, T + 1):
     li = list(map(int, input().split()))
     big_left = 0
     res = divide(li)
-    midd = res[len(res)//2]
-    print(f'#{tc} {big_left} {midd}')
+    midd = res[len(res) // 2]
+    print(f"#{tc} {big_left} {midd}")
