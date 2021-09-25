@@ -1,8 +1,8 @@
 def dfs(v):
-    print(v, end=" ")
     visited[v] = 1
+    print(v)
     for i in graph[v]:
-        if visited[i] != 1:
+        if visited[i] == 0:
             dfs(i)
 
 
