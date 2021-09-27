@@ -15,7 +15,7 @@ def dfs(v):
 컴퓨터수 = int(input())
 간선수 = int(input())
 
-graph = [[] for _ in range(컴퓨터수 + 1)]  # 첫칸은 안씁니당
+graph = [[] for _ in range(컴퓨터수 + 1)]  # 첫 칸은 안씁니당
 for i in range(간선수):
     st, ed = map(int, input().split())
     graph[st].append(ed)
