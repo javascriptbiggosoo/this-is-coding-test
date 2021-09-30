@@ -1,4 +1,5 @@
 # 2트, 맞음 ㅋㅋㅋㅋㅋㅋㅋㅋ야호
+# 1트는 하루 지날때마다 완전탐색으로 1짜리들 직접 델타검색시켰는데 이번엔 그날 새로 익은 토마토들만 큐에 들어가면서 매우 빨라짐
 from collections import deque
 import pprint
 
@@ -34,6 +35,7 @@ for i in range(row):
             큐.append([i, j])
 
 bfs(큐)
+
 ans = 0
 for i in range(row):
     if 0 in arr[i]:
