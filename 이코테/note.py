@@ -1,13 +1,26 @@
-def dfs(v):
-    visited[v] = 1
-    print(v)
-    for i in graph[v]:
-        if visited[i] == 0:
-            dfs(i)
+arr = [5, 3, 8, 7, 9, 1, 2, 4, 6]
 
 
-graph = [[], [2, 3, 8], [1, 7], [1, 4, 5], [3, 5], [3, 4], [7], [2, 6, 8], [1, 7]]
+def quick_sort(arr, start, end):
+    if start >= end:
+        return
 
-visited = [0] * 9
-dfs(1)
-print(visited)
+    pivot = start
+    left = start + 1
+    right = end
+    while left <= right:
+        while left <= end and arr[left] <= arr[pivot]:
+            left += 1
+        while right > start and arr[right] >= arr[pivot]:
+            right -= 1
+
+        if left > right:
+            arr[right], arr[pivot] = arr[pivot], arr[right]
+        else:
+            arr[left], arr[right] = arr[right], arr[left]
+        quick_sort(arr, start, right - 1)
+        quick_sort(arr, right + 1, end)
+
+
+quick_sort(arr, 0, len(arr) - 1)
+print(arr)
