@@ -13,13 +13,11 @@ for i in range(20):
         array.append(i)
 print(array)
 print("1########")
-
 n = 3
 m = 4
 array = [[0] * n for _ in range(m)]
 print(array)
 print("2########")
-
 a = [1, 3, 4]
 a.insert(3, 5)
 print("인덱스 3에 5 추가: ", a)
