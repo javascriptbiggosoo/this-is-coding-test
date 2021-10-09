@@ -1,4 +1,8 @@
-# 2트 이중list에서 정렬하는법을 몰랐다. key 사용법을 잘 알아두자
+# 2트 이중list에서 정렬하는법을 몰랐다.
+# key 사용법을 잘 알아두자, key에다 함수를 할당하는데 그 함수는 정렬할 각 element를 argument로 받는다.
+# 그런 이후 그 함수가 return 하는 값을 비교해 오름차순으로 정렬이 되는데
+# 튜플을 이용해 여러 value를 return 해주면 앞쪽의 value를 기준으로 먼저 정렬 한 후
+# 그 값이 같은 element들 끼리 다시 뒤의 value를 기준으로 정렬을 더 한다
 n = int(input())
 result = 0
 모든회의 = [list(map(int, input().split())) for _ in range(n)]
