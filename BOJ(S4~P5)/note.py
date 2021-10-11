@@ -1,8 +1,5 @@
-# 1트, 메모리 초과
 n = int(input())
-arr = []
-for i in range(n):
-    arr.append(int(input()))
-arr.sort()
-for i in range(n):
-    print(arr[i])
+ans = 0
+if (n % 4 == 0 and n % 100 != 0) or n % 400 == 0:
+    ans = 1
+print(ans)
