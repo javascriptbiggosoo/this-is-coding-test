@@ -1,28 +1,26 @@
-# 오잉? 맞왜맞.. 이거 왜 맞냐고~~~ 아래거랑 차이 없는거아님?
-from sys import stdin, stdout
+# 3트,, 괄호!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 아!!!!!!!
+n = int(input())
+arr = list(map(int, input().split()))
+arr.sort()
 
-n = stdin.readline()
-N = sorted(map(int, stdin.readline().split()))
-m = stdin.readline()
-M = map(int, stdin.readline().split())
+m = int(input())
+targets = list(map(int, input().split()))
 
 
-def binary(l, N, start, end):
-    if start > end:
+def bs(arr, target, st, ed):
+    if st > ed:
         return 0
-    m = (start + end) // 2
-    if l == N[m]:
+    mid = (ed + st) // 2  # ------------------여기 괄호 안했음 하....ㅋㅋㅋㅋㅋ
+    if arr[mid] == target:
         return 1
-    elif l < N[m]:
-        return binary(l, N, start, m - 1)
+    elif arr[mid] > target:
+        return bs(arr, target, st, mid - 1)
     else:
-        return binary(l, N, m + 1, end)
+        return bs(arr, target, mid + 1, ed)
 
 
-for l in M:
-    start = 0
-    end = len(N) - 1
-    print(binary(l, N, start, end))
+for target in targets:
+    print(bs(arr, target, 0, n - 1))
 
 
 # 2트, 반복문은 시간초과.. 재귀는 런타임 에러.. 어떡하지?
