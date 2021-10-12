@@ -1,7 +1,10 @@
-n = int(input())
-N = sorted(map(int, input().split()))
-m = int(input())
-M = map(int, input().split())
+# 오잉? 맞왜맞.. 이거 왜 맞냐고~~~ 아래거랑 차이 없는거아님?
+from sys import stdin, stdout
+
+n = stdin.readline()
+N = sorted(map(int, stdin.readline().split()))
+m = stdin.readline()
+M = map(int, stdin.readline().split())
 
 
 def binary(l, N, start, end):
@@ -50,23 +53,25 @@ for l in M:
 
 
 # 1트, 런타임 에러
-n = int(input())
-arr = sorted(map(int, input().split()))
-m = int(input())
-targets = map(int, input().split())
+# n = int(input())
+# arr = list(map(int, input().split()))
+# arr.sort()
+
+# m = int(input())
+# targets = list(map(int, input().split()))
 
 
-def bs(arr, target, st, ed):
-    if st > ed:
-        return 0
-    mid = ed + st // 2
-    if arr[mid] == target:
-        return 1
-    elif arr[mid] > target:
-        return bs(arr, target, st, mid - 1)
-    else:
-        return bs(arr, target, mid + 1, ed)
+# def bs(arr, target, st, ed):
+#     if st > ed:
+#         return 0
+#     mid = ed + st // 2
+#     if arr[mid] == target:
+#         return 1
+#     elif arr[mid] > target:
+#         return bs(arr, target, st, mid - 1)
+#     else:
+#         return bs(arr, target, mid + 1, ed)
 
 
-for target in targets:
-    print(bs(arr, target, 0, n - 1))
+# for target in targets:
+#     print(bs(arr, target, 0, n - 1))
