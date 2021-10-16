@@ -1,16 +1,23 @@
-T = int(input())
+# 뱀 푸는 중
+# 뱀 푸는 중
+# 뱀 푸는 중
 
-for tc in range(T):
-    n = int(input())
-    영 = [0] * (n + 2)
-    영[0] = 1
-    영[1] = 0
-    일 = [0] * (n + 2)
-    일[0] = 0
-    일[1] = 1
-    for i in range(2, n + 1):
-        영[i] = 영[i - 1] + 영[i - 2]
-        일[i] = 일[i - 1] + 일[i - 2]
-    print(영)
-    print(일)
-    print(영[-2], 일[-2])
+import sys, pprint
+
+n = int(sys.stdin.readline().rstrip())
+
+arr = [[0] * (n + 1) for _ in range(n)]
+
+
+k = int(sys.stdin.readline().rstrip())
+
+for i in range(k):
+    row, col = map(int, sys.stdin.readline().rstrip().split())
+    arr[row][col] = 1
+
+pprint.pprint(arr)
+l = int(sys.stdin.readline().rstrip())
+
+for i in range(l):
+    time, ctrl = sys.stdin.readline().rstrip().split()
+    time = int(time)
