@@ -35,11 +35,11 @@ def dfs(arr, v, visited):
 
 정점수, 간선수, 시작점 = map(int, input().split())
 
-정점들 = [[] for _ in range(정점수 + 1)]
-visited = [0] * (정점수 + 1)
+인접리스트 = [[] for _ in range(정점수 + 1)]
+방문 = [0] * (정점수 + 1)
 for i in range(간선수):
     st, ed = map(int, input().split())
-    정점들[st].append(ed)
-    정점들[ed].append(st)
+    인접리스트[st].append(ed)
+    인접리스트[ed].append(st)
 
-dfs(정점들, 시작점, visited)
+dfs(인접리스트, 시작점, 방문)
