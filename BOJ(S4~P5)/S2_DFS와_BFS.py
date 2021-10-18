@@ -35,9 +35,29 @@ for i in range(간선수):
 
 # pprint.pprint(인접행렬)
 
+# 안보고 다시 풀어본 dfs
 
-dfs(인접행렬, 방문, 시작점)
-방문 = [0] * (정점수 + 1)
+# dfs(인접행렬, 방문, 시작점)
+# 방문 = [0] * (정점수 + 1)
 
-print("")
-bfs(인접행렬, 방문, 시작점)
+# print("")
+# bfs(인접행렬, 방문, 시작점)
+
+# def dfs(arr, v, visited):
+#     visited[v] = 1
+#     print(v)
+#     for i in range(len(arr[v])):
+#         if visited[arr[v][i]] == 0:
+#             dfs(arr, arr[v][i], visited)
+
+
+# 정점수, 간선수, 시작점 = map(int, input().split())
+
+# 인접리스트 = [[] for _ in range(정점수 + 1)]
+# 방문 = [0] * (정점수 + 1)
+# for i in range(간선수):
+#     st, ed = map(int, input().split())
+#     인접리스트[st].append(ed)
+#     인접리스트[ed].append(st)
+
+# dfs(인접리스트, 시작점, 방문)
