@@ -1,4 +1,5 @@
 # 1.5트 성공, 나는 맨날 문제를 잘 안읽나봐 오름차순 출력인걸 못보고 한참 헤맸음; 조건을 모두 종이에 써놓고 시작하자 정말!
+# 그리고 나동빈씨의 답이 더 군더더기 없다 잘 익혀두자
 # https://www.acmicpc.net/problem/18352
 import sys
 from collections import deque
