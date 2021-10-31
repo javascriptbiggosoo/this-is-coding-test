@@ -7,10 +7,62 @@ import pprint
 
 세로, 가로 = map(int, input().split())
 arr = [list(map(int, input().split())) for _ in range(세로)]
-pprint.pprint(arr)
+# pprint.pprint(arr)
+arr_visited = [[0] * 가로 for _ in range(세로)]
+
+dr = [0, 0, 1, -1]
+dc = [1, -1, 0, 0]
+
+res = 0
 
 # 벽 세우기 완전탐색(조합..)
+def virus(r, c):
+    arr_visited[r][c] = 2
+    for i in range(4):
+        nr = r + dr[i]
+        nc = c + dc[i]
+        if 0 <= nr < 세로 and 0 <= nc < 가로 and arr[nr][nc] != 1 and arr_visited[nr][nc] == 0:
+            virus(nr, nc)
+
+
+# 그 중 안전영역 제일 큰 값을 저장해두기
+def safe_checker():
+    dan = 0
+    for i in range(세로):
+        for j in range(가로):
+            if arr[i][j] == 1:
+                dan += 1
+            if arr_visited[i][j] == 2:
+                dan += 1
+    safe_zone = 세로 * 가로 - dan
+    return safe_zone
+
 
 # 완전탐색 순간마다 dfs돌리기
 
-# 그 중 안전영역 제일 큰 값을 저장해두기
+
+def dfs(cnt):
+    global res
+    # 벽 세개 세워졌을 때 안전영역 체크,
+    if cnt == 3:
+        for i in range(세로):
+            for j in range(가로):
+                if arr[i][j] == 2:
+                    virus(i, j)
+        safe_zone = safe_checker()
+        if res < safe_zone:
+            res = safe_zone
+        arr_visited = [[0] * 가로 for _ in range(세로)]
+        return
+    for i in range(세로):
+        for j in range(가로):
+            if arr[i][j] == 0:
+                cnt += 1
+                arr[i][j] = 1
+                dfs(cnt)
+                cnt -= 1
+                arr[i][j] = 0
+
+
+dfs(0)
+print(res)
