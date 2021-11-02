@@ -1,6 +1,6 @@
 # 1트 성공, 근데 bfs가 익숙하지 않아서 여러번 고쳤음. 연습 더 하자.
 from collections import deque
-import pprint
+# import pprint
 
 
 def dfs(인접행렬, 방문, 시작점):
