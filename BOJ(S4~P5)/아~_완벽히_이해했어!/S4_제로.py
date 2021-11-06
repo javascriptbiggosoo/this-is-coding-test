@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/10773
 import sys
 
 n = int(input())

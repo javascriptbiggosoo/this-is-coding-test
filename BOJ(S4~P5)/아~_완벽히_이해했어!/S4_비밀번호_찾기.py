@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/17219
 찾는곳, 찾을것 = map(int, input().split())
 
 대충사전 = {}
