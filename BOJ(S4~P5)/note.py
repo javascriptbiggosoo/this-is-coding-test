@@ -1,49 +1,52 @@
-# 2트 성공, sys.setrecursionlimit(10000).. 이거 써서 맞추니까 왠지 비겁한 느낌인데 하여튼 맞춤
-
-# 1트 성공(아님), 이제 요런건 쉽다 ㅎㅎㅎㅎㅎㅎㅎ 비슷한 유형 많이 푸러봤음 이라고 생각했는데 dfs 런타임 에러가 나버리네
-# 아 ㅋㅋ bfs 로 즉시 수정
-# 했는데 이번엔 또 시간초과에 메모리초과.. 걸림 하.. 뭐지
 from collections import deque
-import sys
 
-sys.setrecursionlimit(10000)
+n = int(input())
 
-dr = [0, 0, 1, 1, 1, -1, -1, -1]
-dc = [1, -1, 1, -1, 0, 1, -1, 0]
+dr = [0, 1, 0, -1]
+dc = [1, 0, -1, 0]
 
+arr = [list(map(int, input().split())) for _ in range(n)]
 
-def dfs(arr, r, c):
-    arr[r][c] = 0
-    for i in range(8):
-        nr = r + dr[i]
-        nc = c + dc[i]
-        if 0 <= nr < h and 0 <= nc < w and arr[nr][nc] == 1:
-            dfs(arr, nr, nc)
+size = 2
 
-
-# def bfs(arr, r, c):
-#     q = deque([[r, c]])
-#     while q:
-#         r, c = q.popleft()
-#         arr[r][c] = 0
-#         for i in range(8):
-#             nr = r + dr[i]
-#             nc = c + dc[i]
-#             if 0 <= nr < h and 0 <= nc < w and arr[nr][nc] == 1:
-#                 q.append([nr, nc])
+fish = []
+for r in range(n):
+    for c in range(n):
+        if 7 > arr[r][c] > 0:
+            fish.append([arr[r][c], r, c])
+        elif arr[r][c] == 9:
+            row = r
+            col = c
+fish.sort(key=lambda x: (x[0], x[1], x[2]))
+fish = deque(fish)  # 식사후 또 먹을 수 있는지 이걸로 확인
 
 
-while True:  # 각 tc마다 실행
-    res = 0
-    w, h = map(int, sys.stdin.readline().rstrip().split())
-    if w == 0 and h == 0:
+def bfs(arr, row, col, size):
+    # 아기 상어는 자신보다 큰 물고기가 있는 칸은 지나갈 수 없고, 자신보다 작은 물고기만 먹을 수 있다. 크기가 같은 물고기는 먹을 수 없지만, 그 물고기가 있는 칸은 지나갈 수 있다.
+
+    # 먹을 수 있는 물고기가 1마리라면, 그 물고기를 먹으러 간다.
+
+    # 거리는 아기 상어가 있는 칸에서 물고기가 있는 칸으로 이동할 때, 지나야하는 칸의 개수의 최솟값이다.
+
+    # 거리가 가까운 물고기가 많다면, 가장 위에 있는 물고기, 그러한 물고기가 여러마리라면, 가장 왼쪽에 있는 물고기를 먹는다.
+    None
+
+
+sec = 0
+eat = 0
+while True:
+    # 더 이상 먹을 수 있는 물고기가 공간에 없다면 아기 상어는 엄마 상어에게 도움을 요청한다.
+    if size <= fish[0]:
         break
+    sec += 1
+    eat += 1
+    # 먹을 수 있는 물고기가 1마리보다 많다면, 거리가 가장 가까운 물고기를 먹으러 간다.
+    bfs(arr, row, col, size)
 
-    arr = [list(map(int, sys.stdin.readline().rstrip().split())) for _ in range(h)]
-    for r in range(h):
-        for c in range(w):
-            if arr[r][c] == 1:
-                # bfs(arr, r, c)
-                dfs(arr, r, c)
-                res += 1
-    print(res)
+    # 아기 상어는 자신의 크기와 같은 수의 물고기를 먹을 때 마다 크기가 1 증가한다. 예를 들어, 크기가 2인 아기 상어는 물고기를 2마리 먹으면 크기가 3이 된다.
+    if eat == size:
+        size += 1
+        eat = 0
+
+# 아기 상어가 몇 초 동안 엄마 상어에게 도움을 요청하지 않고 물고기를 잡아먹을 수 있는지 구하는 프로그램을 작성하시오.
+print(sec)
