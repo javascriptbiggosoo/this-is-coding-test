@@ -1,5 +1,8 @@
+# https://www.acmicpc.net/problem/1260
+
 # 1트 성공, 근데 bfs가 익숙하지 않아서 여러번 고쳤음. 연습 더 하자.
 from collections import deque
+
 # import pprint
 
 
