@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0e3c683-1947-439e-9ecd-25d7d9a46640" name="Default Changelist" comment="" />
+    <list default="true" id="e0e3c683-1947-439e-9ecd-25d7d9a46640" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/가장-큰-수-답안-예시.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/가장-큰-수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/완주하지-못한-선수-답안-예시.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/체육복-답안-예시-2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/체육복-답안-예시.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA/보충 수업/2050.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA/보충 수업/2050.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA/보충 수업/D04/2805. 농작물 수확하기.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA/보충 수업/D04/2805. 농작물 수확하기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SWEA/보충 수업/D06/재귀.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA/보충 수업/D06/재귀.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,12 +31,15 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1lUhDHS07K2po9qT6Naqfp5M9YB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -113,5 +126,8 @@
       <updated>1645242008098</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
