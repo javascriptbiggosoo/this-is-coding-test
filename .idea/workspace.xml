@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e0e3c683-1947-439e-9ecd-25d7d9a46640" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/가장-큰-수-답안-예시.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/가장-큰-수.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/완주하지-못한-선수-답안-예시.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/체육복-답안-예시-2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/체육복-답안-예시.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/N으로-표현-답안-예시.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/더-맵게-답안-예시.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/큰-수-만들기-답안-예시.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SWEA/보충 수업/2050.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA/보충 수업/2050.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SWEA/보충 수업/D04/2805. 농작물 수확하기.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA/보충 수업/D04/2805. 농작물 수확하기.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SWEA/보충 수업/D06/재귀.py" beforeDir="false" afterPath="$PROJECT_DIR$/SWEA/보충 수업/D06/재귀.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunManager" selected="Python.note">
     <configuration name="4-1_상하좌우" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -117,7 +116,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
       <created>1645242008098</created>
