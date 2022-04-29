@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0e3c683-1947-439e-9ecd-25d7d9a46640" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/N으로-표현-답안-예시.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/더-맵게-답안-예시.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programmers/문제-풀이-꿀팁과-실전-모의고사/큰-수-만들기-답안-예시.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e0e3c683-1947-439e-9ecd-25d7d9a46640" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +35,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
