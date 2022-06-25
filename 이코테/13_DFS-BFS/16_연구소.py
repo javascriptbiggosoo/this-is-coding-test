@@ -57,7 +57,7 @@ def dfs(cnt):
         res = max(res, safe_checker())
         arr_visited = [
             [0] * 가로 for _ in range(세로)
-        ]  # <<< 밖에 있던 전역변수를 함수 내에서 재선언(변형x)하면, 함수에서 애초부터 전역변수를 받지 않는다. 처음에 전역에서 한 번 받아올 필요가 있기 때문에 이 코드에선 전역으로 global arr_visited로 전역변수 등록을 해주어야한다.
+        ]  # <<< 밖에 있던 전역변수를 함수 내에서 재선언하면, 함수에서 애초부터 전역변수를 받지 않는다. 처음에 전역에서 한 번 받아올 필요가 있기 때문에 이 코드에선 전역으로 global arr_visited로 전역변수 등록을 해주어야한다.
         return
     for i in range(세로):
         for j in range(가로):

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0e3c683-1947-439e-9ecd-25d7d9a46640" name="Default Changelist" comment="" />
+    <list default="true" id="e0e3c683-1947-439e-9ecd-25d7d9a46640" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BOJ(S5~P5)/S4_팩토리얼_0의_개수.py" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ(S5~P5)/아~_완벽히_이해했어!/S5_팩토리얼_0의_개수.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BOJ(S5~P5)/S5_달팽이.py" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ(S5~P5)/S3_달팽이.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +42,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\IAD\What i am studying now\this-is-coding-test\BOJ(S5~P5)\아~_완벽히_이해했어!" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.note">
     <configuration name="4-1_상하좌우" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
