@@ -1,15 +1,16 @@
-도시개수 = int(input())
-도시간거리 = list(map(int, input().split()))
-도시별유가 = list(map(int, input().split()))
+회의수 = int(input())
+모든회의 = [list(map(int, input().split())) for _ in range(회의수)]
 
-최저가 = min(도시별유가)
-현재도시 = 0
-최소비용 = 0
 
-while True:
-    if 도시별유가[현재도시] == 최저가:
-        최소비용 += 최저가 * 도시간거리[현재도시:]
-        break
-    else:
-        for 도시 in range(현재도시+1, 도시개수):
-            
+def 스겜순(회의):
+    return (회의[1], 회의[0])
+
+
+모든회의.sort(key=스겜순)
+
+최대회의 = [모든회의[0]]
+for 회의 in 모든회의[1:]:
+    if 최대회의[-1][1] <= 회의[0]:
+        최대회의.append(회의)
+
+print(len(최대회의))
